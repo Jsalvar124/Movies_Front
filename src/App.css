@@ -1,0 +1,151 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies{
+  list-style: none;
+  margin:0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.movie h5, .movie p{
+  margin-top:5px;
+  margin-bottom: 0px;
+  padding: 0;
+  text-align: center;
+}
+.movie img{
+  text-align: center;
+  border-radius: 8px;
+  height: 270px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #bebebe;
+  border-radius: 8px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+i{
+  font-size: 0.8rem;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FA;
+  width: 100%;
+  border-top: solid 1px rgba(0,0,0,0.175)
+}
+
+.footer p{
+  margin: 0px;
+  padding:10px;
+}
+.login-title{
+  margin: 0;
+}
+
+.navbar{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+#user-name-label{
+  border-top: solid 1px rgba(0,0,0,0.175);
+  padding-top: 10px;
+}
+
+label{
+  display: block;
+  margin: 0 auto;
+}
+
+#user-name, #password, #remember{
+  display:block;
+  margin: 0 auto 15px;
+}
+
+#remember{
+  display: unset;
+  margin-left: 10px;
+}
+
+.login-title{
+  margin: 0;
+}
+
+.login-box{
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #cfc6c6;
+  padding: 10px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.navbar-brand{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: rgb(65, 59, 59)
+}
+
+.btn, .form-control {
+  margin: 10px 0px 5px;
+}
+
+.infoContainer2 {
+  padding: 10px;
+}
+
+.infoContainer2 label{
+  padding-top: 5px;
+}
