@@ -1,3 +1,4 @@
 # Movies_Front
-
-> https://app.netlify.com/sites/webflix-react-movies/settings/general
+> Website can be found in
+> https://webflix-react-movies.netlify.app/
+> test with user: chacho, password: 1234
