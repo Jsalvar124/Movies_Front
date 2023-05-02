@@ -1,3 +1,3 @@
 # Movies_Front
-
-webflix-react-movies.netlify.app 
+---
+https://app.netlify.com/sites/webflix-react-movies/settings/general
