@@ -1,9 +1,12 @@
 import axios from 'axios';
 import { useState } from 'react';
 
+
+
 export function Login() {
   const [userLogged, setUserLogged] =useState(null);
   const [message, setMessage]=useState("")
+
 
 
   const handleSubmit = async (event) => {
@@ -22,6 +25,8 @@ export function Login() {
       localStorage.setItem('username', username);
       setUserLogged(userId)
       setMessage(response.data.message)
+      userId? window.location.href = './movies' : ""
+
     } catch (error) {
       console.log(error);
     }

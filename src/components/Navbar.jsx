@@ -9,6 +9,13 @@ import { Home } from './Home'
 // import staticMovies from '../mock/movies.json'
 
 const Navbar = () => {
+  const userLogged = localStorage.getItem('userId')? true: false;
+
+
+  const handleLogout = () =>{
+    localStorage.removeItem('userId');
+    localStorage.removeItem('username');
+  }
 
     return (
         <>
@@ -24,7 +31,8 @@ const Navbar = () => {
               <Link className="nav-link" to="/movies">Movies</Link>
               <Link className="nav-link" to="/random">Random</Link>
               <Link className="nav-link" to="/search">Search</Link>
-              <Link className="nav-link" to="/login">Login</Link>
+              { !userLogged && <Link className="nav-link" to="/login">Login</Link>}
+              { userLogged && <a onClick={handleLogout} className="nav-link" href="/movies">Logout {localStorage.username}</a>}
             </div>
           </div>
         </div>

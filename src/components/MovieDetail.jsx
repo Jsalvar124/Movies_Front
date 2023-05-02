@@ -51,9 +51,10 @@ export function MovieDetail () {
                 userId: localStorage.userId,
                 rating: fields.get('rating'),
                 watched: fields.get('watched')==='on'? 1: 0,
-                movieId: movieId
+                movieId: movieId   
         })
         console.log(response.data); 
+        window.location.reload()
         } catch (error) {
             console.log(error)
         }
